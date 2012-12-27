@@ -42,3 +42,8 @@ math and data analysis functions
  - recommendation user filtred
  - recommendation item filtred
 
+*Radix tree*
+ - insert
+ - remove
+ - search
+ - longest prefix
