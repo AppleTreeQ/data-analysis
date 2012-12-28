@@ -72,7 +72,7 @@ class Prefixer():
         except:
             return False
         
-    def __search_dico(self, word):
+    def _search_dico(self, word):
         node = self.__data        
         while word:
             prefix, key = self.longest_prefix(word, node.keys())
@@ -90,7 +90,7 @@ class Prefixer():
         return node   
     
     def search(self, word):
-        dico = self.__search_dico(word)        
+        dico = self._search_dico(word)        
         if dico != False:
             return self.traverse_dico(dico)
         return []
